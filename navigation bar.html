@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar </title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color:#333 ;
+            white-space: nowrap; /* Ensures all items stay in one line */
+        }
+
+        .navbar a, .navbar input[type="text"], .navbar button, .dropdown .dropbtn {
+            float: left;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            border: none;
+        }
+
+        .navbar input[type="text"] {
+            margin-left: 10px;
+            margin-top: 8px;
+            padding: 6px;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        .navbar button {
+            background-color:#5f7181;
+            color: white;
+            margin-top: 8px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .navbar button:hover, .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: rgb(16, 26, 59);
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(83, 183, 201, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: rgb(22, 211, 224);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .languages-row {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .languages-row a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .languages-row a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Tutorials 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#javascript">JavaScript</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Exercises 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#exercise1">Exercise 1</a>
+            <a href="#exercise2">Exercise 2</a>
+            <a href="#exercise3">Exercise 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Services 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#webdev">Web Development</a>
+            <a href="#seo">SEO</a>
+            <a href="#consulting">Consulting</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+        </div>
+    </div>
+
+    <input type="text" placeholder="Search..">
+
+    <div class="navbar-right">
+        <a href="#signin">Sign In</a>
+        <a href="#login">Log In</a>
+    </div>
+ 
+</div>
+<hr>
+<div class="languages-row">
+    
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#javascript">JavaScript</a>
+    <a href="#php">php</a>
+    <a href="#csharp">C#</a>
+    <a harf="#java">java</a>
+    <a href="#python">Python</a>
+    <a href="#c">C</a>
+    <a href="#c++">C++</a>
+   
+  
+</div>
+
+</body>
+</html>
